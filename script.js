@@ -30,7 +30,11 @@ function createList(){
     .map(a => a.value)
     .forEach((person, index)=>{
         const listItem = document.createElement('li');
+
+        // listItem.classList.add('over')
+
         listItem.setAttribute('data-index', index) // when you create a custom attribute in HTML, use data
+        
         listItem.innerHTML = `
             <span class="number">${index + 1}</span>
             <div class="draggable" draggable="true">
